@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         view.addSubview(textField)
     }
 
+    
     // Реализация метода делегата, который вызывается при изменении текста
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         print("Текст изменен: \(textField.text ?? "")")
